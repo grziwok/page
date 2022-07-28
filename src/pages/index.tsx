@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { About, Heading, Layout, Link, List } from '../components';
-import * as S from './index.styles';
+import * as S from '../styles/index.styles';
 
 const projectsList = [
     {
