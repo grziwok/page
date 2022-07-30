@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import * as S from './layout.styles';
+import { CONFIGURATION } from '../../shared';
 
 type Props = {
     title: string;
@@ -11,7 +12,7 @@ export const Layout: React.FC<Props> = ({ title, children }) => (
   <React.Fragment>
     <Head>
       <title>{title}</title>
-      <meta name="description" content="Personal page by Krzysztof Grziwok" />
+      <meta name="description" content={CONFIGURATION.description} />
     </Head>
 
     <S.Layout>

@@ -1,21 +1,11 @@
 import type { NextPage } from 'next';
 import { About, Heading, Layout, Link, List } from '../components';
 import * as S from '../styles/index.styles';
-
-const projectsList = [
-    {
-        name: 'STS',
-        description: 'Mobile version of application for the largest betting company in Poland',
-    },
-    {
-        name: 'cux.io',
-        description: 'Startup for detecting user behavior in your applications',
-    },
-];
+import { CONFIGURATION } from '../shared';
 
 const Home: NextPage = () => {
   return (
-      <Layout title="Krzysztof Grziwok">
+      <Layout title={CONFIGURATION.title}>
         <div>
             <S.HomeAbout>
                 <About />
@@ -24,13 +14,14 @@ const Home: NextPage = () => {
             <Heading content="Projects I took part" />
 
             <div>
-                <List items={projectsList} />
+                <List items={CONFIGURATION.projects} />
             </div>
 
             <S.HomeFooter>
                 <S.HomeFooterLinks>
-                    <Link content="Resume" link="/resume" />
-                    <Link content="github.com/grziwok" link="github.com/grziwok" />
+                    {CONFIGURATION.footer.links.map((item, index) => (
+                        <Link key={index} content={item.name} link={item.link} />
+                    ))}
                 </S.HomeFooterLinks>
 
                 <S.HomeFooterEmail>
