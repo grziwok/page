@@ -13,8 +13,9 @@ export const CONFIGURATION = {
   ],
   footer: {
       links: [
-          { name: 'Resume', link: '/resume' },
-          { name: 'github.com/grziwok', link: 'github.com/grziwok' },
+          { name: 'Resume', href: '/resume' },
+          { name: 'github.com/grziwok', href: 'https://github.com/grziwok', newTab: true },
+          { name: 'linkedin.com/in/grziwok', href: 'https://www.linkedin.com/in/grziwok/', newTab: true },
       ],
   },
 };

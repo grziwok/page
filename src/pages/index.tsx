@@ -20,13 +20,14 @@ const Home: NextPage = () => {
             <S.HomeFooter>
                 <S.HomeFooterLinks>
                     {CONFIGURATION.footer.links.map((item, index) => (
-                        <Link key={index} content={item.name} link={item.link} />
+                        <Link
+                            key={index}
+                            content={item.name}
+                            href={item.href}
+                            newTab={item.newTab}
+                        />
                     ))}
                 </S.HomeFooterLinks>
-
-                <S.HomeFooterEmail>
-                    <Link content="krzysztof(at)grziwok.com" link="krzysztof(at)grziwok.com" />
-                </S.HomeFooterEmail>
             </S.HomeFooter>
         </div>
       </Layout>
