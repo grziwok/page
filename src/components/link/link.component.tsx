@@ -8,9 +8,9 @@ type Props = {
 }
 
 export const Link: React.FC<Props> = ({ content, href, newTab }) => {
-    const target = newTab ? '_blank' : '_self';
+  const target = newTab ? '_blank' : '_self';
 
-    return (
-        <S.Link href={href} target={target}>{content}</S.Link>
-    );
+  return (
+    <S.Link href={href} target={target}>{content}</S.Link>
+  );
 };

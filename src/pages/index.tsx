@@ -5,32 +5,32 @@ import { CONFIGURATION } from '../shared';
 
 const Home: NextPage = () => {
   return (
-      <Layout title={CONFIGURATION.title}>
+    <Layout title={CONFIGURATION.title}>
+      <div>
+        <S.HomeAbout>
+          <About />
+        </S.HomeAbout>
+
+        <Heading content="Projects I took part" />
+
         <div>
-            <S.HomeAbout>
-                <About />
-            </S.HomeAbout>
-
-            <Heading content="Projects I took part" />
-
-            <div>
-                <List items={CONFIGURATION.projects} />
-            </div>
-
-            <S.HomeFooter>
-                <S.HomeFooterLinks>
-                    {CONFIGURATION.footer.links.map((item, index) => (
-                        <Link
-                            key={index}
-                            content={item.name}
-                            href={item.href}
-                            newTab={item.newTab}
-                        />
-                    ))}
-                </S.HomeFooterLinks>
-            </S.HomeFooter>
+          <List items={CONFIGURATION.projects} />
         </div>
-      </Layout>
+
+        <S.HomeFooter>
+          <S.HomeFooterLinks>
+            {CONFIGURATION.footer.links.map((item, index) => (
+              <Link
+                key={index}
+                content={item.name}
+                href={item.href}
+                newTab={item.newTab}
+              />
+            ))}
+          </S.HomeFooterLinks>
+        </S.HomeFooter>
+      </div>
+    </Layout>
   );
 };
 

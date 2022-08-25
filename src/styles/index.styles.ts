@@ -1,7 +1,12 @@
 import styled from 'styled-components';
+import { devices } from './variables.styles';
 
 export const HomeAbout = styled.div`
-  padding: 100px 0;
+  padding: 16px 0 40px 0;
+
+  @media ${devices.tablet} {
+    padding: 100px 0;
+  }
 `;
 
 export const HomeFooter = styled.div`

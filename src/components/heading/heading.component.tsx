@@ -6,5 +6,5 @@ type Props = {
 }
 
 export const Heading: React.FC<Props> = ({ content }) => (
-    <S.Heading>{content}</S.Heading>
+  <S.Heading>{content}</S.Heading>
 );
