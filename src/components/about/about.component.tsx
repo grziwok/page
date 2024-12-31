@@ -3,6 +3,6 @@ import * as S from './about.styles';
 
 export const About: React.FC = () => (
   <S.About>
-        Hello! I&apos;m Krzysztof Grziwok - software developer with focus on the details. Currently Senior Front-End Developer working in Betsys, where we are developing the largest betting platform in country.
+        Hi there! I&apos;m Krzysztof Grziwok, a passionate software engineer with a keen eye for detail. Currently, I work as a Team Leader at Betsys, where we’re building the largest and most advanced betting platform in the country.
   </S.About>
 );
