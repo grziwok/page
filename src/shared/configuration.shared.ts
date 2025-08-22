@@ -4,7 +4,7 @@ export const CONFIGURATION = {
     projects: [
         {
             name: 'STS',
-            description: 'Mobile version of application for the largest betting company in Poland',
+            description: 'Web application for the largest betting company in Poland',
         },
         {
             name: 'cux.io',

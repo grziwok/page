@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   assetPrefix: './',
   images: {
-    loader: 'akamai',
+    loader: "custom",
     path: '',
   },
   compiler: {
